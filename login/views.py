@@ -25,7 +25,7 @@ from itertools import chain
 #API(13)隱私權聲明
 @csrf_exempt
 def here(request):
-    return HttpResponse('i want to push to gcp!!')
+    return HttpResponse('i want to push to gcp!! and change it!')
 
 
 @csrf_exempt
