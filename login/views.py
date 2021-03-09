@@ -24,6 +24,11 @@ from itertools import chain
 
 #API(13)隱私權聲明
 @csrf_exempt
+def here(request):
+    return HttpResponse('i want to push to gcp!!')
+
+
+@csrf_exempt
 def privacy_policy(request):
     sid = request.COOKIES['sessionid']
     s = Session.objects.get(pk=sid)
