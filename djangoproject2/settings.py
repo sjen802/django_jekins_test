@@ -116,15 +116,16 @@ USE_TZ = True
 
 # USE_L10N = False #原本是true
 # DATE_FORMAT = 'Y-m-d'
-# DATETIME_FORMAT = 'Y-m-d H:i:s'
+DATETIME_FORMAT = 'Y-m-d H:i:s'
 # USE_TZ = True
 
+STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'mx90127481@gmail.com'
